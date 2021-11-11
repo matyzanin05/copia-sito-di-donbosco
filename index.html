@@ -8,6 +8,7 @@
     <title>donbosco</title>
   </head>
   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
       #blu
       {
         background-color:rgb(73, 113, 255, 1) ;
@@ -38,31 +39,80 @@
       {
           padding-right: 200px;
       }
-      .text
+      #link1 a
       {
-          
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-family:'Montserrat';
+      }
+      #link1 a:hover 
+      {
+          color:rgb(255, 255, 255);
+      }
+      #link a
+      {
+          color: rgb(73, 113, 255, 1);
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-family:'Montserrat';
+      }
+      #link a:hover 
+      {
+          color:rgb(73, 113, 255, 1);
       }
 
   </style>
   <body>
       <div id='blu' class='container-fluid primariga'>
-        <p>Home   Chi siamo   Dove siamo News   Gallery   Trasparenza</p>
+        <p id='link1'> <a>Home</a>   <a>Chi siamo</a>   <a>Dove siamo News</a>   <a>Gallery</a>   <a>Trasparenza</a></p>
       </div>
 
       <div class='container'>
           <div class='row'>
-            <div class='imglogo col-4'>
+            <div class='imglogo col-3'>
                 <img src='img/logo.jpg' class='logo'>
             </div>
-            <div class='col-6'>
+            <div class='col-8'>
                 <br>
-                <br>
-                <p class='text'> <a href="#">CARROZZERIA</a>    <a href="#">ELETTRICO</a>    <a href="#">ENERGIE</a>    <a href="#">INFORMATICO</a>    <a href="#">MECCANICO</a>    <a href="#">MOTORISTICO</a></p>
+                <p id='link'> <a href="#">CARROZZERIA</a>    <a href="#">ELETTRICO</a>    <a href="#">ENERGIE</a>    <a href="#">INFORMATICO</a>    <a href="#">MECCANICO</a>    <a href="#">MOTORISTICO</a></p>
     
             </div>
             
           </div>
      </div>
+
+    <!------------------carooser---------------------------->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/meccanico.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
